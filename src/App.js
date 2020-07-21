@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Navbar, NavbarBrand, Nav } from 'reactstrap'
 import Menu from './components/MenuComponent'
+import { DISHES } from './shared/dishes.js'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <NavbarBrand href="/">Ristorante ConFusion</NavbarBrand>
         </div>
       </Navbar>
-      <Menu />
+      <Menu dishes={DISHES}/>
     </div>
   );
 }
