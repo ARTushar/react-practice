@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Navbar, NavbarBrand, Nav } from 'reactstrap'
+import Menu from './components/MenuComponent'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
           <NavbarBrand href="/">Ristorante ConFusion</NavbarBrand>
         </div>
       </Navbar>
+      <Menu />
     </div>
   );
 }
