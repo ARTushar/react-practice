@@ -4,17 +4,17 @@ import DishDetail from './DishDetailComponent';
 import Header from './HeaderComponent.js';
 import Footer from './FooterComponent.js';
 import Home from './HomeComponent.js';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Contact from './ContactComponent.js';
 import About from './AboutComponent.js';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
     return {
-        dishes: state.DISHES,
-        comments: state.COMMENTS,
-        promotions: state.PROMOTIONS,
-        leaders: state.LEADERS
+        dishes: state.dishes,
+        comments: state.comments,
+        promotions: state.promotions,
+        leaders: state.leaders
     }
 }
 
